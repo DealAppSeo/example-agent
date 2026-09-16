@@ -7,10 +7,14 @@
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",
-    "test": "node --import tsx --test tests/*.test.ts"
+    "test": "node --import tsx --test tests/*.test.ts",
+    "verify:paris": "trustshell verify \"The capital of France is Paris.\"",
+    "verify:rome": "trustshell verify \"The Eiffel Tower is located in Rome, Italy.\"",
+    "repid": "trustshell repid trinity-shofet",
+    "proof": "trustshell proof trinity-shofet --verify"
   },
   "dependencies": {
-    "@hyperdag/trustshell": "^0.6.1",
+    "@hyperdag/trustshell": "github:DealAppSeo/trustshell",
     "express": "^4.19.2"
   },
   "devDependencies": {
